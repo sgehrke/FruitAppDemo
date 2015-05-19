@@ -10,9 +10,9 @@ Assignment: DEVELOP Fruit Dadtabase App (ADD-ON)
 
 // This is where we will call the API and decode the JSON
 	// grabs the contents (which is json) of the getfruit.php 
-	$contents = file_get_contents("http://localhost:8888/Week3/homework/part2/getfruit.php");
+//	$contents = file_get_contents("http://localhost:8888/Week3/homework/part2/getfruit.php");
 	// decodes the json into an array of usable data
-	$encoded = json_decode($contents);
+//	$encoded = json_decode($contents);
 	// runs a loop to find the image path and sets it as a variable to be used later
 	foreach($encoded->fruits as $fruit) {
 		$rand_fruit = $fruit->fruit_img;
