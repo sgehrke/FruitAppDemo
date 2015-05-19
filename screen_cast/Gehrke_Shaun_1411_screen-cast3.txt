@@ -1,0 +1,10 @@
+/*
+Name: Shaun Gehrke
+Class: SSL 1411
+Assignment: ANALYYZE, DESIGN, DEVELOP! , INTEGRATE & TEST, OPTIMIZE Fruit Database App (ADD_ON) JSON
+*/	
+Week 3 Screen-Cast link
+
+http://www.youtube.com/watch?v=g_o9RDOhsgo
+
+Week 3 we were given a bit more time to produce our php rather than watch the learning videos.

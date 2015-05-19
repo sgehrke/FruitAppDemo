@@ -1,0 +1,249 @@
+/*
+Name: Shaun Gehrke
+Class: SSL 1411
+Assignment: ANALYYZE, DESIGN! Fruit Dadtabase App
+*/
+
+/*************************************
+**************************************
+
+ 			   CLEARFIX
+
+**************************************
+*************************************/
+  
+* {
+	margin: 0;
+	font-family: Helvetica;
+}
+
+
+body , html {
+	min-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	background: url(../images/fruit_market.jpg) no-repeat fixed ;
+	min-height: 100%;
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+}
+
+.inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+	padding: 20px;
+	width: 960px;
+	margin: 0 auto 50px auto;
+}
+
+div .row {
+	position: relative;
+	padding-top: 220px;
+}
+
+form p {
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(111,21,21,0.47) 17%, rgba(248,47,47,1) 38%, rgba(255,48,48,1) 39%, rgba(255,40,40,1) 65%, rgba(95,15,15,0.52) 87%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(17%,rgba(111,21,21,0.47)), color-stop(38%,rgba(248,47,47,1)), color-stop(39%,rgba(255,48,48,1)), color-stop(65%,rgba(255,40,40,1)), color-stop(87%,rgba(95,15,15,0.52)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(111,21,21,0.47) 17%,rgba(248,47,47,1) 38%,rgba(255,48,48,1) 39%,rgba(255,40,40,1) 65%,rgba(95,15,15,0.52) 87%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(111,21,21,0.47) 17%,rgba(248,47,47,1) 38%,rgba(255,48,48,1) 39%,rgba(255,40,40,1) 65%,rgba(95,15,15,0.52) 87%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(111,21,21,0.47) 17%,rgba(248,47,47,1) 38%,rgba(255,48,48,1) 39%,rgba(255,40,40,1) 65%,rgba(95,15,15,0.52) 87%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(111,21,21,0.47) 17%,rgba(248,47,47,1) 38%,rgba(255,48,48,1) 39%,rgba(255,40,40,1) 65%,rgba(95,15,15,0.52) 87%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+#wrapper:after{
+	height: 1px;
+}
+
+footer {
+	height: 150px;
+}
+
+footer p {
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	line-height: 170px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 1);	
+}
+
+p img{
+	vertical-align: middle;
+} 
+
+/*************************************
+**************************************
+
+ 			   HEADER
+
+**************************************
+*************************************/
+
+header {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);	
+	color: white;
+	text-align: center;
+	top: 0;
+	margin-bottom: 50px;
+	height: 170px;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	z-index: 999;
+	-webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+
+header h1 {
+	text-shadow: 0px 3px 2px black;
+	font-size: 3em;
+	padding-top: 50px;
+    color: white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+header form {
+/* 	font weight maybe */
+	display: inline-block;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+header.small-header {
+    height: 100px;
+}
+
+header.small-header>h1 {
+    font-size: 1.5em;
+        padding-top: 5px;
+}
+
+
+/*************************************
+**************************************
+
+ 			   Buttons
+
+**************************************
+*************************************/
+
+
+a {
+	text-decoration: none;
+}
+
+.button_add {
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	padding: 5px 20px;
+	background: -webkit-linear-gradient(#009eff 0%, #00aeff 100%);
+	background: -moz-linear-gradient(#009eff 0%, #00aeff 100%);
+	border-radius: 3px;
+	border: none;
+	box-shadow: inset 0px 0px 4px white;
+}
+.button_add:hover {
+	background: -webkit-linear-gradient(#36a9ff 0%, #99e7ff 100%);
+	background: -moz-linear-gradient(#36a9ff 0%, #99e7ff 100%);
+}
+
+.button_delete {
+	color: white;
+	font-size: 1em;
+	padding: 5px;
+	background: -webkit-linear-gradient(#009eff 0%, #00aeff 100%);
+	background: -moz-linear-gradient(#009eff 0%, #00aeff 100%);
+	border-radius: 3px;
+	border: none;
+	box-shadow: inset 0px 0px 4px white;
+}
+.button_delete:hover {
+	background: -webkit-linear-gradient(#36a9ff 0%, #99e7ff 100%);
+	background: -moz-linear-gradient(#36a9ff 0%, #99e7ff 100%);
+}
+
+.button_delete:active {
+	background: #36a9ff;
+}
+
+/*************************************
+**************************************
+
+ 			   Table
+
+**************************************
+*************************************/
+
+form {
+	text-align: center;
+	padding: 10px;
+}
+
+form.pulse {
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 5s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+}
+
+table {
+	width: 800px;
+	background: #f0f0f0;
+	margin: 0 auto;
+}
+
+label {
+	color: white;
+	font-size: 1.5em;
+}
+input {
+	line-height: 1.2em;
+	font-size: 1.2em;
+	padding-left: 5px;
+}
+th {
+	padding: 10px;
+	color: white;
+	background: black;
+	margin: 0 auto;
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+}
+
+tr:nth-child(odd) {
+	background: rgba(191, 183, 183, 0.69);
+}
