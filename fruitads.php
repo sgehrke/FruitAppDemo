@@ -5,8 +5,7 @@ Name: Shaun Gehrke
 Class: SSL 1411
 Assignment: DEVELOP Fruit Dadtabase App (ADD-ON)
 */
-
-ini_set('display_errors',0);
+	error_reporting(0);
 
 
 // This is where we will call the API and decode the JSON
